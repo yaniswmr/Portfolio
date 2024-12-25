@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yanis - Portfolio</title>
+
+    <link rel="icon" href="images/code-slash.svg" >
+
+    <link rel="stylesheet" href="styles/css/bootstrap.css">
+
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!------------------------------------------------------------------------------------------>
+    <!--                            Réalisé par OUAMAR Yanis 21315506                         -->
+    <!------------------------------------------------------------------------------------------>
+
+</head>
+<body>
+    <!--    La page est constitué de 3 parties : header , main , footer -->
+    <!--    Le main est reparti en 5 sections : Home , Projets , Skills , About , Contact   -->
+        <!--    Chaque section est constituée de 2 blocs principaux ( Partie Gauche / Partie Droite ) , qui seront sur la meme colonne quand on passe sur le responsive      -->
+    <!--    Le fichier CSS associé suit la meme structure <=> styles de la partie header , puis la partie main (styles de toutes les sections dans l'ordre), puis la partie footer  -->
+    <header>
+        <nav class="row">
+            <div class="logo col-10 col-md-3">
+                <a href="#Home" id="logo-link">Yanis</a>
+            </div>
+            <ul class="nav-bar d-md-block col-md-7">
+                <div class="row nav-links">
+                    <li class="col-md"><a href="#Home" id="home-link" class="nav-item">Home</a></li>
+                    <li class="col-md"><a href="#Projets" id="projets-link" class="nav-item">Projets</a></li>
+                    <li class="col-md"><a href="#Skills" id="skills-link" class="nav-item">Skills</a></li>
+                    <li class="col-md"><a href="#About" id="about-link" class="nav-item">About</a></li>
+                    <li class="col-md"><a href="#Contact" id="contact-link" class="nav-item">Contact</a></li>
+                </div>
+            </ul>
+            <div class="d-md-none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" class="hamburger_icon" viewBox="0 0 24 24"><path  d="M4 18h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1m0-5h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1M3 7c0 .55.45 1 1 1h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1"/></svg>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <!------------------------>
+        <!--    Section Home    -->
+        <!------------------------>
+        <div class="Home section" id="Home">
+            <div class="container col-xxl-8 px-4 py-5">
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5 home-content">
+                    <!--    Partie droite de la section     -->
+                    <div class="col-10 col-sm-8 col-lg-6 home-pic home-pic2">
+                        <img src="images/yanis.jpeg" class="d-block mx-lg-auto img-fluid yanis-pic" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                    </div>
+                    <!--    Partie gauche de la section     -->
+                    <div class="col-lg-6 home-text home-text2">
+                        <h1 class="principal-title display-5 fw-bold lh-1 mb-3">Hi, Je suis Yanis Ouamar</h1>
+                        <h3 class="description">Développeur Informatique à Sorbonne Univeristé</h3>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                            <a href="data/ouamar_yanis_cv.pdf" download="ouamar_yanis_cv" class="download-btn px-4 col-10 col-sm-5 me-md-2" target="_blank">Download CV</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="toggle-dark-mode">
+                <img src="images/moon-fill.svg" width="30" height="30" id="theme-button" class="theme-btn" alt="">
+            </div>
+        </div>
+        <!--------------------------->
+        <!--    Section Projets    -->
+        <!--------------------------->
+        <div class="Projets section" id="Projets">
+            <h3 class="title">Projets</h3>
+            <p class="subtitle">Mes Projets</p>
+
+            <div class="row projets-content">
+                <div class="row projet-1-2">
+                    <!--    Partie gauche de la section     -->
+                    <div class="ecosysteme col-7 col-lg-4">
+                        <div class="ecosysteme-img-cadre">
+                            <img src="images/ecosysteme.jpg"  class="ecosysteme-img img-fluid" alt="">
+                        </div>
+                        <div class="infos-cadre">
+                            <h4>Ecosysteme</h4>
+                            <p>Projet réalisé avec le Langage C </p>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#ecosysteme-modal">En savoir plus <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-arrow-right arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                              </svg>
+                            </a>
+                            
+                            <!-- Modal pour Ecosysteme Project -->
+                            <div class="modal fade" id="ecosysteme-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content modal-custom">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            <h4>Projet : Ecosysteme</h4>
+
+                                            <p>Ce projet simule un écosystème avec des proies et des prédateurs dans un environnement
+                                                 de type torique. Les proies et les prédateurs sont représentés par des structures en
+                                                   lien qui se déplacent, consomment de l'énergie et se reproduisent suivant des règles
+                                                   spécifiques. L'écosystème est visualisé dans une grille, où les positions des animaux
+                                                    sont mises à jour à chaque itération. Le projet est implémenté en langage C et permet
+                                                     de tester plusieurs aspects, tels que le mouvement des animaux, la reproduction et la
+                                                      consommation d’énergie.
+                                            </p>
+                                            <p>
+                                                <br>
+                                                ####Partie 1 - Manipulation des Animaux
+
+                                                creer_animal(int x, int y, float energie) : crée un nouvel animal avec des coordonnées et une énergie initiale.
+                                                ajouter_en_tete_animal(Animal *liste, Animal *animal) : ajoute un animal en tête d'une liste d'animaux.
+                                                compte_animal_rec(Animal *la) et compte_animal_it(Animal *la) : comptent le nombre d'animaux dans une liste, de manière récursive et itérative respectivement.
+                                                enlever_animal(Animal **liste, Animal *animal) : supprime un animal spécifique de la liste.
+                                                liberer_liste_animaux(Animal *liste) : libère la mémoire allouée pour une liste d'animaux.
+                                                                                            <br><br>
+                                                ####Partie 2 - Simulation de l'Écosystème
+                                                                                            <br>
+                                                bouger_animaux(Animal *la) : déplace chaque animal dans la liste suivant sa direction. Applique la toricité de l'espace.
+                                                reproduce(Animal **liste_animal, float p_reproduce) : gère la reproduction des animaux, avec une probabilité de reproduction p_reproduce.
+                                                rafraichir_proies(Animal **liste_proie, int monde[SIZE_X][SIZE_Y]) : met à jour l'état des proies, en diminuant leur énergie, en les supprimant si leur énergie est épuisée, et en appelant la fonction de reproduction.
+                                                rafraichir_predateurs(Animal **liste_predateur, Animal **liste_proie) : met à jour l'état des prédateurs, qui consomment les proies s'ils en trouvent, perdent de l'énergie sinon, et se reproduisent.
+                                                rafraichir_monde(int monde[SIZE_X][SIZE_Y]) : met à jour la grille représentant l'écosystème.
+                                            </p>
+
+                                            <div class="link">
+                                                <a href="https://github.com/yaniswmr" target="_blank">Liens vers GitHub <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-arrow-right arrow-right" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                                                  </svg>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--*********************************-->
+
+                        </div>
+                    </div>
+                    <!--    Partie droite de la section     -->
+                    <div class="automates col-7 col-lg-4">
+                        <div class="automates-img-cadre">
+                            <img src="images/automates.png"  class="automates-img img-fluid" alt="">
+                        </div>
+                        <div class="infos-cadre">
+                            <h4>Automates</h4>
+                            <p>Projet réalisé avec Python </p>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#automates-modal">En savoir plus <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-arrow-right arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                              </svg>
+                            </a>
+
+                            <!-- Modal pour Automates Project -->
+                            <div class="modal fade" id="automates-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content modal-custom">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            
+                                            <h4>Projet : Automates</h4>
+                                            
+                                            <p>
+                                            Simulation et manipulation d’automates finis (Python)
+                                            Programmation et test d’algorithmes sur les automates finis : déterminisation, complémentation, et complétion d’automates.
+                                            Implémentation des fonctions de reconnaissance de mots et vérification des propriétés (déterminisme, complétude).
+                                                Utilisation de structures de données avancées et développement de tests unitaires pour garantir la fiabilité des algorithmes.
+                                            </p>
+
+                                            <div class="link">
+                                                <a href="https://github.com/yaniswmr" target="_blank">Liens vers GitHub <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-arrow-right arrow-right" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                                                  </svg>
+                                                </a>
+                                            </div>
+
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--*********************************-->
+
+                        </div>
+                    </div>
+                </div>
+                <!--    3 eme projet sur une unique ligne-->
+                <div class="row projet-3">
+                    <div class="avions col-7 col-lg-4">
+                        <div class="avions-img-cadre">
+                            <img src="images/avions.jpg"  class="avions-img img-fluid" alt="">
+                        </div>
+                        <div class="infos-cadre">
+                            <h4>Gestion des avions</h4>
+                            <p>Projet réalisé avec le Langage C </p>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#avions-modal">En savoir plus <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-arrow-right arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                              </svg>
+                            </a>
+                            <!-- Modal pour Gestion des avions Project -->
+                            <div class="modal fade" id="avions-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content modal-custom">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            <h4>Projet : Gestion des avions</h4>
+
+                                            <p>création un programme pour un aéroport qui a pour but
+                                                d’enregistrer toutes les informations des avions appartenant à cette aéroport, aussi
+                                                pouvoir manipuler l’ensemble de ces avions avec les différentes fonctions demandées.
+                                                Le programme dispose de plusieurs fonctionnalités tels que : la création de l’aéroport
+                                                avec l’enregistrement des avions, la rechercher d’un avion donné dans l’aéroport, la
+                                                suppression de certains avions selon une condition, le tri de l’ensemble des avions
+                                                selon une condition, affichage de certain avion qui vérifient certaines conditions, et la
+                                                répartition de la l’aéroport sur des ensembles d’avions selon une condition spécifiée.
+                                            </p>
+                                                
+                                            <div class="link">
+                                                <a href="https://github.com/yaniswmr" target="_blank">Liens vers GitHub <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-arrow-right arrow-right" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                                                  </svg>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--*********************************-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-------------------------->
+        <!--    Section Skills    -->
+        <!-------------------------->
+        <div class="Skills section" id="Skills">
+            <h3 class="title">Skills</h3>
+            <p class="subtitle">Mes compétences techniques</p>
+
+            <div class="row skills-content">
+                <!--    Partie gauche de la section     -->
+                <div class="col-9 col-lg-4 web-dev">
+                    <h3>Développement Web</h3>
+                    <div class="skill">
+                        <div class="skill-item">
+                            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path d="M4.136 3.012h15.729l-1.431 16.15l-6.451 1.826l-6.414-1.826l-1.433-16.15zm5.266 7.302l-.173-2.035l7.533.002l.173-1.963l-9.87-.002l.522 5.998h6.835l-.243 2.566l-2.179.602l-2.214-.605l-.141-1.58H7.691l.247 3.123L12 17.506l4.028-1.08l.558-6.111H9.402v-.001z"/></svg>
+                            <span>HTML</span>
+                        </div>
+                        <div class="html-bar"></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4.192 3.143h15.615l-1.42 16.034l-6.404 1.812l-6.369-1.813L4.192 3.143zM16.9 6.424l-9.8-.002l.158 1.949l7.529.002l-.189 2.02H9.66l.179 1.913h4.597l-.272 2.62l-2.164.598l-2.197-.603l-.141-1.569h-1.94l.216 2.867L12 17.484l3.995-1.137l.905-9.923z"/></svg>
+                            <span>CSS</span>
+                        </div>
+                        <div class="css-bar"></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 3h18v18H3V3zm16.525 13.707c-.131-.821-.666-1.511-2.252-2.155c-.552-.259-1.165-.438-1.349-.854c-.068-.248-.078-.382-.034-.529c.113-.484.687-.629 1.137-.495c.293.09.563.315.732.676c.775-.507.775-.507 1.316-.844c-.203-.314-.304-.451-.439-.586c-.473-.528-1.103-.798-2.126-.775l-.528.067c-.507.124-.991.395-1.283.754c-.855.968-.608 2.655.427 3.354c1.023.765 2.521.933 2.712 1.653c.18.878-.652 1.159-1.475 1.058c-.607-.136-.945-.439-1.316-1.002l-1.372.788c.157.359.337.517.607.832c1.305 1.316 4.568 1.249 5.153-.754c.021-.067.18-.528.056-1.237l.034.049zm-6.737-5.434h-1.686c0 1.453-.007 2.898-.007 4.354c0 .924.047 1.772-.104 2.033c-.247.517-.886.451-1.175.359c-.297-.146-.448-.349-.623-.641c-.047-.078-.082-.146-.095-.146l-1.368.844c.229.473.563.879.994 1.137c.641.383 1.502.507 2.404.305c.588-.17 1.095-.519 1.358-1.059c.384-.697.302-1.553.299-2.509c.008-1.541 0-3.083 0-4.635l.003-.042z" /></svg>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="javascript-bar"></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bootstrap-fill" viewBox="0 0 16 16">
+                                <path d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375z"/>
+                                <path d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396z"/>
+                            </svg>
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="bootstrap-bar"></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M2.15 16.78h1.57a.14.14 0 0 0 .14-.12l.35-1.82h1.22a4.88 4.88 0 0 0 1.51-.2A2.79 2.79 0 0 0 8 14a3.18 3.18 0 0 0 .67-.85a3.43 3.43 0 0 0 .36-1a2.43 2.43 0 0 0-.41-2.16a2.64 2.64 0 0 0-2.09-.78h-3a.16.16 0 0 0-.15.13L2 16.6a.19.19 0 0 0 0 .13a.17.17 0 0 0 .15.05zM5 10.62h1a1.45 1.45 0 0 1 1.08.29c.17.18.2.52.11 1a1.81 1.81 0 0 1-.57 1.12a2.17 2.17 0 0 1-1.33.33h-.8zm9.8-.95a2.7 2.7 0 0 0-1.88-.51h-1.19l.33-1.76a.15.15 0 0 0 0-.13a.16.16 0 0 0-.11 0h-1.57a.14.14 0 0 0-.14.12l-1.38 7.27a.13.13 0 0 0 0 .12a.13.13 0 0 0 .11.06h1.54a.14.14 0 0 0 .14-.13l.77-4.07h1.11c.45 0 .61.1.66.16a.81.81 0 0 1 0 .62l-.61 3.24a.13.13 0 0 0 0 .12a.14.14 0 0 0 .11.06h1.56a.16.16 0 0 0 .15-.13l.64-3.4a1.7 1.7 0 0 0-.24-1.64zm4.52-.51h-3.13a.14.14 0 0 0-.15.13l-1.46 7.31a.16.16 0 0 0 0 .13a.14.14 0 0 0 .11.05h1.63a.14.14 0 0 0 .15-.12l.37-1.82h1.27a5.28 5.28 0 0 0 1.56-.2a3 3 0 0 0 1.18-.64a3.31 3.31 0 0 0 .7-.85a3.45 3.45 0 0 0 .37-1a2.38 2.38 0 0 0-.42-2.16a2.81 2.81 0 0 0-2.18-.83zm.62 2.77a1.83 1.83 0 0 1-.6 1.12a2.28 2.28 0 0 1-1.37.33h-.8l.54-2.76h1a1.6 1.6 0 0 1 1.13.29c.16.18.16.52.1 1.02z" /></svg>
+                            <span>Php</span>
+                        </div>
+                        <div class="php-bar"></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="hsl(240, 69%, 61%)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8a2 2 0 0 1 2 2v4a2 2 0 1 1-4 0v-4a2 2 0 0 1 2-2m5 0v8h4m-8-1l1 1M3 15a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1"/></svg>
+                            <span>SQL</span>
+                        </div>
+                        <div class="sql-bar"></div>
+                    </div>
+                </div>
+                <!--    Partie droite de la section     -->
+                <div class="col-9 col-lg-4 programmation">
+                    <h3>Langages</h3>
+                    <div class="skill">
+                        <div class="skill-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M9.37 17.51c-3.09.86 1.87 2.64 5.8 1a7.18 7.18 0 0 1-1.1-.54a11.59 11.59 0 0 1-4.16.18c-1.31-.15-.54-.64-.54-.64z" /><path d="M14.7 15.83a16.27 16.27 0 0 1-5.36.26c-1.31-.14-.45-.77-.45-.77c-3.4 1.12 1.89 2.4 6.64 1a2.25 2.25 0 0 1-.83-.49z" /><path d="M16.52 6.1s-6.87 1.71-3.59 5.49a1.47 1.47 0 0 1-.25 2.12s2.46-1.27 1.33-2.86s-1.86-2.22 2.51-4.75z" /><path d="M18.13 19.14s.56.46-.63.82c-2.27.69-9.43.9-11.42 0c-.72-.31.62-.74 1-.83a2.54 2.54 0 0 1 .69-.08c-.8-.56-5.15 1.1-2.21 1.58c8.05 1.37 14.64-.56 12.57-1.49z" /><path d="M15.37 14.26a7 7 0 0 1 .92-.49s-1.51.27-3 .4a28.11 28.11 0 0 1-4.82.05C6.09 13.91 9.74 13 9.74 13a6.81 6.81 0 0 0-3.16.75c-2.06 1.03 5.09 1.48 8.79.51z" /><path d="M16.28 16.7a.39.39 0 0 1-.08.09c5-1.32 3.18-4.65.78-3.81a.71.71 0 0 0-.33.25s.14-.05.43-.12c1.22-.25 2.92 1.63-.8 3.59z" /><path d="M12 13c-.74-1.67-3.26-3.14 0-5.71C16.09 4.08 14 2 14 2c.84 3.31-3 4.31-4.34 6.37c-.93 1.41.47 2.92 2.34 4.63z" /><path d="M16.41 21.32a29.75 29.75 0 0 1-9.14.14s.46.38 2.84.53c3.61.23 9.15-.12 9.29-1.83c0 0-.26.64-2.99 1.16z" /></svg>                        
+                            <span>Java</span>
+                        </div>
+                        <div class="java-bar"></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><g fill="none"><g fill="hsl(240, 69%, 61%)" clip-path="url(#akarIconsPythonFill0)"><path d="M11.914 0C5.82 0 6.2 2.656 6.2 2.656l.007 2.752h5.814v.826H3.9S0 5.789 0 11.969s3.403 5.96 3.403 5.96h2.03v-2.867s-.109-3.42 3.35-3.42h5.766s3.24.052 3.24-3.148V3.202S18.28 0 11.913 0M8.708 1.85c.578 0 1.046.47 1.046 1.052c0 .581-.468 1.051-1.046 1.051s-1.046-.47-1.046-1.051c0-.582.467-1.052 1.046-1.052"/><path d="M12.087 24c6.092 0 5.712-2.656 5.712-2.656l-.007-2.752h-5.814v-.826h8.123s3.9.445 3.9-5.735s-3.404-5.96-3.404-5.96h-2.03v2.867s.109 3.42-3.35 3.42H9.452s-3.24-.052-3.24 3.148v5.292S5.72 24 12.087 24m3.206-1.85c-.579 0-1.046-.47-1.046-1.052c0-.581.467-1.051 1.046-1.051c.578 0 1.046.47 1.046 1.051c0 .582-.468 1.052-1.046 1.052"/></g><defs><clipPath id="akarIconsPythonFill0"><path fill="#fff" d="M0 0h24v24H0z"/></clipPath></defs></g></svg>
+                            <span>Python</span>
+                        </div>
+                        <div class="python-bar"></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256"><g fill="gray"><rect width="256" height="256" fill="hsl(240, 69%, 61%)" rx="60"/><path fill="#fff" d="M134.001 33c35.143 0 65.827 19.086 82.261 47.456l-.16-.273l-41.349 23.808c-8.146-13.793-23.081-23.102-40.213-23.293l-.539-.003c-26.126 0-47.306 21.179-47.306 47.304a47.1 47.1 0 0 0 6.239 23.47c8.154 14.235 23.482 23.837 41.067 23.837c17.692 0 33.108-9.724 41.221-24.111l-.197.345l41.286 23.918c-16.254 28.13-46.517 47.157-81.252 47.536l-1.058.006c-35.255 0-66.026-19.204-82.419-47.724C43.579 161.353 39 145.212 39 127.999C39 75.533 81.532 33 134.001 33"/></g></svg>
+                            <span>LangageC</span>
+                        </div>
+                        <div class="langagec-bar"></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g fill="none" stroke="hsl(240, 69%, 61%)" stroke-linecap="round" stroke-linejoin="round"><path d="M2 15.5c-.7 0-1.5-.8-1.5-1.5V5c0-.7.8-1.5 1.5-1.5h9c.7 0 1.5.8 1.5 1.5v9c0 .7-.8 1.5-1.5 1.5z"/><path d="m1.2 3.8l3.04-2.5S5.17.5 5.7.5h8.4c.66 0 1.4.73 1.4 1.4v7.73a2.7 2.7 0 0 1-.7 1.75l-2.68 3.51"/><path d="M6 8.75c0-.69-.54-1.25-1.2-1.25h-.6c-.66 0-1.2.56-1.2 1.25S3.54 10 4.2 10h.6c.66 0 1.2.56 1.2 1.25s-.54 1.25-1.2 1.25h-.6c-.66 0-1.2-.56-1.2-1.25M4.5 6.5v1m0 5v1"/></g></svg>
+                            <span>Bash</span>
+                        </div>
+                        <div class="bash-bar"></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><rect width="8" height="13.001" x="4" y="1.499" fill="none" stroke="hsl(240, 69%, 61%)" stroke-linecap="round" stroke-linejoin="round" rx="2.286" ry="2.286"/><path fill="none" stroke="hsl(240, 69%, 61%)" stroke-linecap="round" stroke-linejoin="round" d="M4 4.5H1.5M4 8H1.5M4 11.5H1.5m13-7H12M14.5 8H12m2.5 3.5H12"/></svg>
+                            <span>Emu 8086</span>
+                        </div>
+                        <div class="emulator-bar"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!------------------------->
+        <!--    Section About    -->
+        <!------------------------->
+        <div class="About section" id="About">
+            <h3 class="title">A propos de moi</h3>
+            <p class="subtitle">Présentation</p>
+
+            <div class="about-content row">
+                <!--    Partie gauche de la section     -->
+                <div class="left-side col-9 col-lg-5">
+                    <p>
+                        Je suis étudiant en deuxième année de Licence Informatique à Sorbonne Université, passionné par les technologies de l’information et le développement logiciel. Grâce à mon parcours académique, j’ai acquis des compétences solides en développement web (HTML, CSS, JavaScript, Bootstrap, PHP) ainsi qu’en programmation avancée en C, en programmation orientée objet avec Java, et en programmation fonctionnelle avec OCaml. Mon expertise s’étend également à l’administration système et au scripting sous Linux et Bash, ainsi qu’à la gestion de versions avec Git et GitHub.
+                        Je m’intéresse particulièrement à l’apprentissage continu et à l’application concrète des concepts, comme en témoignent mes projets académiques en simulation d’écosystèmes et en gestion de systèmes complexes. Mon objectif est de mettre mes compétences techniques au service de projets innovants, tout en développant mon expérience professionnelle.
+                    </p>
+                    <a href="#Contact" class="contact-btn">Contact ME</a>
+                </div>
+                <!--    Partie droite de la section     -->
+                <div class="right-side col-9 col-lg-5">
+                    <h3>Parcours Académique</h3>
+                    <div class="esi">
+                        <img src="images/esi-logo.png"  class="esi-logo" alt=""><span>Ecole Nationale Supérieure d'informatique d'Alger</span>
+                    </div>
+                    <div class="arrow-bottom">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" fill="hsl(240, 69%, 61%)" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"/>
+                          </svg>
+                    </div>
+                    <div class="su">
+                        <img src="images/Su-logo.png" class="su-logo" alt=""><span>Sorbonne Université</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--------------------------->
+        <!--    Section Contact    -->
+        <!--------------------------->
+        <div class="Contact section" id="Contact">
+            <h3 class="title">Contactez Moi</h3>
+            <p class="subtitle">Get in touch</p>
+
+            <div class="row contact-content">
+                <!--    Partie gauche de la section     -->
+                <div class="col-10 col-md-4 right-contact">
+                    <div class="row mail-contact">
+                        <img src="images/social/envelope-at.svg" height="30px" width="30px">
+                        <p>Email</p>
+                        <a href="mailto:yanisouamar7@mail.com">Un mail par ici <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-arrow-right arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                          </svg></a>
+                    </div>
+                    <div class="row social-media">
+                        <a href="https://fr.linkedin.com/in/yanis-ouamar-181750303" class="col-2" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"  class="bi bi-linkedin linkedin-logo" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                          </svg></a>
+                        <a href="https://github.com/yaniswmr" class="col-2" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="bi bi-github github-logo" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                          </svg></a>
+                        <a href="https://x.com/" class="col-2" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"  class="bi bi-twitter-x twitter-logo" viewBox="0 0 16 16">
+                            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                          </svg></a>
+                    </div>
+                </div>
+                <!--    Partie droite de la section     -->
+                <div class="col-10 col-md-6 form-contact">
+                    <h4>Un petit message pour en savoir plus ?</h4>
+                    <form action="#">
+                        <label for="name">Nom</label>
+                        <input type="text" class="name-input" id="name" placeholder="Votre Nom" required>
+
+                        <label for="email">Mail</label>
+                        <input type="email" class="mail-input" id="email" placeholder="Votre Mail" required>
+
+                        <label for="message">Message</label>
+                        <textarea name="textarea" class="message-input" id="message" rows="5" cols="30" placeholder="Votre Message" required></textarea>
+                        
+                        <button type="submit" class="submit-btn">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+
+        <p class="hook">by <span>Yanis</span></p>
+        <div>
+            <a href="#Home">Home</a>
+            <a href="#About">A Propos</a>
+            <a href="#Contact">Contacter</a>
+        </div>
+        <p>&#169; OUAMAR Yanis. All right reserved</p>
+
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/js/bootstrap.js"></script>
+    
+</body>
+</html>
